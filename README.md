@@ -56,8 +56,7 @@ These histories can provide different forecasting cues even when the current
 relation values are similar. The method therefore encodes each pair's relation
 sequence before merging information from different neighbors.
 
-【！image1-论文图1】
-
+![图1 论文示意图](images/README_images/image1-论文图1.png)
 Figure 1. Motivation for modeling pairwise relation histories. The illustration
 contrasts different relative-motion histories with similar current relation
 values and shows how relation history informs attention and neighbor fusion.
@@ -76,7 +75,8 @@ and a vectorized road map. Its processing stages are:
 6. Exchange information between vehicles through global attention.
 7. Decode six future trajectories, distribution scales, and mode probabilities.
 
-【！image2-论文图2】
+
+![图2](images/README_images/image2-论文图2.png)
 
 Figure 2. Overall prediction framework. Historical trajectories, validity masks,
 and vectorized maps feed a relation-enhanced local encoder, a global interaction
@@ -174,7 +174,7 @@ Gated fusion, output projection, residual connections, layer normalization,
 and a feed-forward network update the target representation. If no neighbors
 are available, the neighbor context is set to zero.
 
-【！image3-论文图3】
+![图3](images/README_images/image3-论文图3.png)
 
 Figure 3. Temporal relation encoding and relation-guided neighbor fusion.
 Separate pair states preserve relation histories, which influence both
@@ -355,7 +355,7 @@ turns, and gentle curves. Each example shows one target vehicle's history,
 ground-truth future, and six predicted trajectories. The candidate with the
 highest predicted probability is highlighted.
 
-【！image4-论文图4】
+![图4](images/README_images/image4-论文图4.png)
 
 Figure 4. Predictions for (a) straight driving, (b) a left turn, (c) a right
 turn, and (d) a gentle curve. Dark blue denotes the highest-probability
